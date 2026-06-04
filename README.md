@@ -1,16 +1,16 @@
-# 🛒 Sistema de Banco de Dados para Loja
+# 🛒 Sistema de Banco de Dados para Loja (MySQL)
 
-Este repositório contém a estrutura de modelagem de dados para um sistema de gestão de loja, desenvolvido em **MySQL**. O projeto simula o ecossistema de um comércio, controlando desde o cadastro de clientes e localização até o fluxo financeiro.
+Este repositório contém a estrutura completa de modelagem de dados para um sistema de gestão de loja, desenvolvido em **MySQL**. O projeto simula o ecossistema de um comércio, controlando desde o cadastro de clientes até o fluxo financeiro.
 
-## 🗄️ Estrutura do Banco de Dados
+## 🗄️ Estrutura das Tabelas
 
-O banco foi modelado de forma relacional para garantir a integridade das informações. Ele está dividido nos seguintes módulos:
+O banco foi modelado de forma relacional para garantir a organização e integridade das informações, sendo dividido nos seguintes arquivos:
 
-* **Clientes (`loja_cliente.sql`):** Armazena os dados cadastrais dos clientes da loja.
-* **Localização (`loja_estado.sql` e `loja_municipio.sql`):** Tabelas normalizadas para gerenciar estados e municípios, evitando redundância de dados.
-* **Financeiro (`loja_contasreceber.sql`):** Controle de fluxo de caixa, parcelas e valores que a loja tem a receber.
-* **Consultas e Rotinas (`loja_routines.sql` e `loja_projetoclientes.sql`):** Automações e consultas estruturadas para relatórios.
+* **`loja_cliente.sql`:** Armazena os dados cadastrais dos clientes.
+* **`loja_estado.sql` e `loja_município.sql`:** Tabelas normalizadas para gerenciar a localização, evitando repetição de dados.
+* **`loja_contasreceber.sql`:** Controle do fluxo financeiro, parcelas e valores a receber da loja.
+* **`loja_routines.sql` e `loja_projetoclientes.sql`:** Consultas estruturadas, automações e relatórios de clientes.
 
-## 🛠️ Tecnologias Utilizadas
-* **SGBD:** MySQL
-* **Conceitos aplicados:** Chaves Primárias (PK), Chaves Estrangeiras (FK), Normalização de Dados e Relacionamentos.
+## 🛠️ Tecnologias e Conceitos Aplicados
+* **SGBD:** MySQL (Workbench)
+* **Conceitos:** Chaves Primárias (PK), Chaves Estrangeiras (FK), Relacionamentos entre tabelas e Normalização de dados.
