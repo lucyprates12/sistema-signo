@@ -1,16 +1,19 @@
-# 🛒 Sistema de Banco de Dados para Loja (MySQL)
+# 🔮 Sistema de Signos - Programação Web com PHP
 
-Este repositório contém a estrutura completa de modelagem de dados para um sistema de gestão de loja, desenvolvido em **MySQL**. O projeto simula o ecossistema de um comércio, controlando desde o cadastro de clientes até o fluxo financeiro.
+Este é um projeto de aplicação web desenvolvido em **PHP** que identifica o signo do usuário com base na sua data de nascimento. O sistema demonstra conceitos fundamentais de desenvolvimento backend, estruturação de páginas e manipulação de arquivos de dados.
 
-## 🗄️ Estrutura das Tabelas
+## 📁 Estrutura dos Arquivos do Projeto
 
-O banco foi modelado de forma relacional para garantir a organização e integridade das informações, sendo dividido nos seguintes arquivos:
+O projeto está organizado de forma modular para facilitar a manutenção do código:
 
-* **`loja_cliente.sql`:** Armazena os dados cadastrais dos clientes.
-* **`loja_estado.sql` e `loja_município.sql`:** Tabelas normalizadas para gerenciar a localização, evitando repetição de dados.
-* **`loja_contasreceber.sql`:** Controle do fluxo financeiro, parcelas e valores a receber da loja.
-* **`loja_routines.sql` e `loja_projetoclientes.sql`:** Consultas estruturadas, automações e relatórios de clientes.
+* **`index.php`:** Página principal com o formulário web onde o usuário insere a sua data de nascimento.
+* **`mostrar_signo_do_zodiaco.php`:** Arquivo backend responsável por processar a data enviada, fazer a busca lógica e exibir o signo correto na tela.
+* **`signos.xml`:** Arquivo de dados que armazena as datas de início, término e as características de cada signo do zodíaco.
+* **`cabeçalho.php` e `rodapé.php`:** Componentes visuais reutilizáveis para manter a padronização do design em todas as páginas.
 
 ## 🛠️ Tecnologias e Conceitos Aplicados
-* **SGBD:** MySQL (Workbench)
-* **Conceitos:** Chaves Primárias (PK), Chaves Estrangeiras (FK), Relacionamentos entre tabelas e Normalização de dados.
+* **Linguagem Principal:** PHP
+* **Armazenamento de Dados:** XML (Extensible Markup Language)
+* **Desenvolvimento Web:** HTML5, CSS3 e componentização de páginas.
+* **Lógica Backend:** Leitura e parsing de arquivos XML, manipulação de datas e estruturas condicionais.
+* 
